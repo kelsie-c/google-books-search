@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { Component, Route, BrowserRouter as Router } from "React";
+import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import Saved from "./pages/Saved";
+import Search from "./pages/Search";
+import Wrapper from "./components/Wrapper";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    results: ""
+  }
+
+  render() {
+    return (
+      <Router>
+        <div>
+          <NavBar />
+          <Header />
+          <Wrapper>
+            <Route exact path="/" component={Search} />
+            <Route exact path="/search" component={Search} />
+            <Route exact path="/saved" component={Saved} />
+          </Wrapper>
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App;
