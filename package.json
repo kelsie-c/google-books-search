@@ -1,5 +1,6 @@
 {
   "name": "google-books-search",
+  "homepage": "https://kelsie-c.github.io/google-books-search/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "express": "^4.17.1",
+    "gh-pages": "^3.2.2",
     "mongo": "^0.1.0",
     "mongoose": "^5.12.14",
     "react": "^17.0.2",
@@ -17,6 +19,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
