@@ -43,13 +43,13 @@ class Search extends React.Component {
         this.searchBook(this.state.search);
     };
 
-    renter() {
+    render() {
         return (
             <>
                 <Form 
                     search={this.state.search} 
-                    handleInputChange={this.handleInputChange} 
-                    handleFormSubmit={this.handleFormSubmit} 
+                    handleinputchange={this.handleInputChange} 
+                    handleformsubmit={this.handleFormSubmit} 
                 />
                 <div>
                     <h2>Results</h2>

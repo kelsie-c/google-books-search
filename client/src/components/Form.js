@@ -3,7 +3,7 @@ import React from "react";
 function Form(props) {
     return (
         <>
-            <form search={this.state.search} handleInputChange={this.handleInputChange} handleFormSubmit={this.handleFormSubmit}>
+            <form search={props.search} handleinputchange={props.handleInputChange} handleformsubmit={props.handleFormSubmit}>
                 <div>
                     <label htmlFor="search">Book Search: </label>
                     <input
