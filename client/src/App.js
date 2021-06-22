@@ -1,4 +1,4 @@
-import React, { Component, Route, BrowserRouter as Router } from "React";
+import React, { Component, BrowserRouter as Router, Route } from "react";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import Saved from "./pages/Saved";
