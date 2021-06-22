@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Saved from "./pages/Saved";
 import Search from "./pages/Search";
 import Wrapper from "./components/Wrapper";
+import NoMatch from "./pages/NoMatch";
 import './App.css';
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route exact path="/" component={Search} />
             <Route exact path="/search" component={Search} />
             <Route exact path="/saved" component={Saved} />
+            <Route exact path="/nomatch" component={NoMatch} />
           </Wrapper>
         </div>
       </Router>
