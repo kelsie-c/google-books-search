@@ -7,14 +7,14 @@ function Form(props) {
                 <div>
                     <label htmlFor="search">Book Search: </label>
                     <input
-                        onChange={props.handleinputChange}
+                        onChange={props.handleinputchange}
                         value={props.search}
                         name="search"
                         type="text"
                         placeholder="Search for a book"
                         id="search"
                     />
-                    <button onClick={props.handleFormSubmit}>Search</button>
+                    <button onClick={props.handleformsubmit}>Search</button>
                 </div>
             </form>
         </>
