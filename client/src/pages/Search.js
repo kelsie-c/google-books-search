@@ -50,7 +50,7 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <div className="container">
+        <div className="container text-center">
           
           <Form
             search={this.state.search}

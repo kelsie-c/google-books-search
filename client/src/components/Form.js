@@ -4,8 +4,7 @@ function Form(props) {
     return (
         <>
             <form search={props.search} handleinputchange={props.handleInputChange} handleformsubmit={props.handleFormSubmit}>
-                <div>
-                    <label htmlFor="search">Book Search: </label>
+                <div className="input-group mb-3">
                     <input
                         onChange={props.handleinputchange}
                         value={props.search}
@@ -13,8 +12,9 @@ function Form(props) {
                         type="text"
                         placeholder="Search for a book"
                         id="search"
+                        className="form-control"
                     />
-                    <button onClick={props.handleformsubmit}>Search</button>
+                    <button className="btn btn-outline-success" type="button" id="button-addon2" onClick={props.handleformsubmit}>Search</button>
                 </div>
             </form>
         </>
